@@ -136,11 +136,23 @@ public class TreeNode {
         }
     }
 
+    // 实现深度优先搜索
     public List<int> dfs(TreeNode treeNode) {
+        preOrder(treeNode);
+        inOrder(treeNode);
+        postOrder(treeNode);
 
     }
 
+    // 实现广度优先搜索
     public List<int> bfs(TreeNode treeNode) {
 
     }
+
+    // 插入
+    public void insert(String value) {
+
+    }
+
+    // 搜索
 }

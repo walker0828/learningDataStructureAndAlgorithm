@@ -14,6 +14,16 @@ public class Heap {
             return;
         }
         if()
+    }
+
+    // 实现一个小顶堆
+    public void minHeap() {
 
     }
+
+    // 实现一个大顶堆
+    public
+
+    // 实现优先级队列
+    public
 }
