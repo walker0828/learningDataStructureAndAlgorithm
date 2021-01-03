@@ -17,13 +17,37 @@ public class Heap {
     }
 
     // 实现一个小顶堆
-    public void minHeap() {
+    public void buildMinHeap(int[] items) {
+        for(int i = (items.length)/2 -1 ; i>= 0 ; i--) {
+            heapifyMinHeap(i);
+        }
+    }
 
+    private void heapifyMinHeap(int i) {
+        int l = left(i);
+        int r = right(i);
+
+        int smallest = i;
+        if(l< items.length && data[l] < data[i]) {
+            smallest = l;
+        }
+
+        if(r< items.length && data[r] < data[i]) {
+            smallest = l;
+        }
     }
 
     // 实现一个大顶堆
-    public
+    public void buildMaxHeap() {
+
+    }
+
+    private void heapifyMaxHeap(int i) {
+
+    }
 
     // 实现优先级队列
-    public
+    public void priorityQueue() {
+
+    }
 }
